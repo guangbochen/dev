@@ -7,6 +7,7 @@ questions:
   type: boolean
   description: "Enable RocketChat Persistent Volume"
   show_subquestion_if: true
+  group: RocketChat
   subquestions:
     - variable: persistence.size
       default: "5Gi"
@@ -20,4 +21,5 @@ questions:
   label: Enable MongoDB Persistent Volume
   type: boolean
   default: false
+  group: mongodb
   description: "Enable MongoDB Persistent Volume"
