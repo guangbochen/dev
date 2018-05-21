@@ -2,10 +2,20 @@ categories:
 - chat
 questions:
 - variable: persistence.enabled
-  default: "false"
+  default: false
   label: Enable RocketChat Persistent Volume
   type: boolean
   description: "Enable RocketChat Persistent Volume"
+  show_subquestions_if: true
+  sub_questions:
+    - variable: persistence.size
+      default: "5Gi"
+      label: RocketChat Volume Size
+      type: string
+    - variable: persistence.storageClass
+      default: ""
+      label: RocketChat Storage Class
+      type: storageclass
 - variable: mongodb.persistence.enabled
   label: Enable MongoDB Persistent Volume
   type: boolean
