@@ -58,9 +58,9 @@ spec:
     {{- end }}
       volumes:
       - name: rocket-data
-    {{- if .Values.persistence.enabled }}
-        persistentVolumeCliam:
+      {{- if .Values.persistence.enabled }}
+        persistentVolumeClaim:
           claimName: {{ template "rocketchat.fullname" . }}
-    {{- else }}
-      emptyDir: {}
-    {{- end }}
+      {{- else }}
+        emptyDir: {}
+      {{- end }}
