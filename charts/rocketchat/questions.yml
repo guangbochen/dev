@@ -33,3 +33,15 @@ questions:
       default: ""
       label: MongoDB Storage Class
       type: storageclass
+- variable: rocketchat.username
+  default: admin
+  label: Admin Username
+  type: string
+- variable: rocketchat.password
+  default: admin
+  label: Admin Password
+  type: password
+- variable: rocketchat.email
+  default: admin@example.com
+  label: Admin Email
+  type: string
