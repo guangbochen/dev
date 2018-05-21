@@ -6,8 +6,8 @@ questions:
   label: Enable RocketChat Persistent Volume
   type: boolean
   description: "Enable RocketChat Persistent Volume"
-  show_subquestions_if: true
-  sub_questions:
+  show_subquestion_if: true
+  subquestions:
     - variable: persistence.size
       default: "5Gi"
       label: RocketChat Volume Size
