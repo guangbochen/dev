@@ -1,0 +1,13 @@
+categories:
+- chat
+questions:
+- variable: persistence.enabled
+  default: "false"
+  label: Enable RocketChat Persistent Volume
+  type: boolean
+  description: "Enable RocketChat Persistent Volume"
+- variable: mongodb.persistence.enabled
+  label: Enable MongoDB Persistent Volume
+  type: boolean
+  default: false
+  description: "Enable MongoDB Persistent Volume"
