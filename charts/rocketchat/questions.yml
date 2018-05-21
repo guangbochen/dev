@@ -23,3 +23,13 @@ questions:
   default: false
   group: mongodb
   description: "Enable MongoDB Persistent Volume"
+  show_subquestion_if: true
+  subquestions:
+    - variable: mongodb.persistence.size
+      default: "8Gi"
+      label: MongoDB Volume Size
+      type: string
+    - variable: mongodb.persistence.storageClass
+      default: ""
+      label: MongoDB Storage Class
+      type: storageclass

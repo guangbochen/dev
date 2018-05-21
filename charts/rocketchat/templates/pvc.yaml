@@ -5,7 +5,7 @@ metadata:
   name: {{ template "rocketchat.fullname" . }}
 spec:
   accessModes:
-    - {{ .Values.persistence.accessModes }}
+    - {{ .Values.persistence.accessMode }}
   volumeMode: Filesystem
   resources:
     requests:
